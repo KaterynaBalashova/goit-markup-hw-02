@@ -1,9 +1,9 @@
 :root {
     --logo-btn-color: #4d5ae5;
     --hover-color: #404bbf;
-    --main-color: #2e2f42;
+    --accent-color: #2e2f42;
     --color-green: #31d0aa;
-    --text-color: #434455;
+    --main-color: #434455;
     --color-light-slate: #8e8f99;
     --color-footer-text: #e7e9fc;
     --color-accent-footer: #f4f4fd;
@@ -31,14 +31,14 @@ body {
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.33;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-btn-color);
 }
 
 .accent-header {
-    color: var(--main-color);
+    color: var(--accent-color);
 }
 
 .nav-link {
@@ -50,23 +50,25 @@ body {
 }
 
 .nav-link:hover,
-.nav-link:active,
+.nav-link:focus,
 .nav-link:active {
     color: var(--hover-color);
 }
 
-.mail-address,
-.phone-number {
+.address-header {
+    font-style: normal
+}
+
+.address-info {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
-.mail-address:is(:hover, :focus),
-.phone-number:is(:hover, :focus) {
+.address-info:is(:hover, :focus) {
     color: var(--hover-color);
 }
 
@@ -74,7 +76,7 @@ body {
 
 /***** HERO *****/
 .hero {
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
 }
 
 .main-title {
@@ -115,14 +117,15 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
 }
 
 .subtitle {
     font-size: 36px;
     line-height: 1.11;
+    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    color: var(--accent-color);
 }
 
 .worker-name {
@@ -136,13 +139,12 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
 }
 
 /***** FOOTER *****/
 
 .page-footer {
-    background-color: var(--main-color);
+    background-color: var(--accent-color);
 }
 
 .accent-footer {
@@ -186,7 +188,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--main-color);
+    color: var(--accent-color);
 }
 
 .project-type {
@@ -194,5 +196,5 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--text-color);
+    color: var(--main-color);
 }
