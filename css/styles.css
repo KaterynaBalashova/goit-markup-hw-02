@@ -46,7 +46,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: inherit;
+    color: var(--accent-color);
 }
 
 .nav-link:hover,
@@ -133,6 +133,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--accent-color);
 }
 
 .worker-position {
