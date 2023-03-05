@@ -54,6 +54,10 @@ body {
     color: var(--hover-color);
 }
 
+.address-header {
+    font-style: normal;
+}
+
 .address-info {
     font-style: normal;
     font-size: 16px;
