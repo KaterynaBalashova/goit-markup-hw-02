@@ -12,11 +12,35 @@
     --color-grey: #2e2f42;
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
 }
 .link {
     text-decoration: none;
+}
+
+.container {
+    width: 1158px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
 }
 
 body {
@@ -25,6 +49,11 @@ body {
 }
 
 /***** HEADER *****/
+
+.main-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+} 
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -75,6 +104,8 @@ body {
 /***** HERO *****/
 .hero {
     background-color: var(--accent-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .main-title {
@@ -91,9 +122,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer;
     background-color: var(--logo-btn-color);
     color: var(--color-white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .order-btn:hover,
@@ -104,11 +136,17 @@ body {
 
 /***** SECTION ABOUT US *****/
 
+.section-about-us {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .about-us-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--accent-color)
 }
 
 .about-us-desc {
@@ -140,10 +178,26 @@ body {
     letter-spacing: 0.02em;
 }
 
+/***** WHAT ARE WE DOING *****/
+
+.we-doing-section {
+    padding-bottom: 120px;
+}
+
+/***** OUR TEAM *****/
+
+.section-team {
+    background-color: var(--color-accent-footer);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 /***** FOOTER *****/
 
 .page-footer {
     background-color: var(--accent-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .accent-footer {
@@ -167,9 +221,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    cursor: pointer;
     background-color: var(--color-accent-footer);
     color: var(--logo-btn-color);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 }
 
 .project-btn:hover,
@@ -180,6 +235,11 @@ body {
 }
 
 /***** PROJECTS LIST *****/
+
+.projects-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 
 .project-name {
     font-weight: 500;
